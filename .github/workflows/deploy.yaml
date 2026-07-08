@@ -27,9 +27,7 @@ jobs:
           context: .
           push: true
           build-args: |
-            VERSION=${{ github.event.release.tag_name }}
             COMMIT=${{ github.sha }}
           tags: |
             ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ github.event.release.tag_name }}
 
