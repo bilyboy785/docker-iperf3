@@ -96,5 +96,5 @@ No CI: tests, build and push are done locally.
 
 ```bash
 ./scripts/test.sh        # build + server/client/healthcheck tests (Docker)
-./scripts/build-push.sh  # build linux/amd64 and push :latest (+ version tag if HEAD is tagged)
+./scripts/build-push.sh  # build linux/amd64 + linux/arm64 and push :latest (+ version tag if HEAD is tagged)
 ```
